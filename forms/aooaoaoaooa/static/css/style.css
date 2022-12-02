@@ -1,0 +1,53 @@
+body{
+    background: url('../img/BGImage.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+.form__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #02133C;
+    margin-bottom: 48px;
+}
+
+.form__reg{
+    max-width: 585px;
+    background-color: #FFFFFF;
+    padding: 76px 57px;
+}
+.reg__textarea{
+
+    width:465px;
+    height:180px;  
+    margin-bottom: 30px; 
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn button{
+    color: #FFFFFF;
+    background-color: #C40B0B;
+    padding: 9px;
+}
+.form__action{
+    width:470px;
+ 
+}
+.input{
+    padding: 16px 23px;
+}
+.input1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}

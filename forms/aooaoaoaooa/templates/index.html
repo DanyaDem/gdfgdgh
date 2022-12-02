@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <div class="form__reg">
+            <div class="form__text">
+                Make an appointment
+            </div>
+            <div class="form__action">
+            <form action="load" method="post">
+                {% csrf_token%}
+                <div class="input1">
+                    <input type="text"  name='name' class="input" placeholder="Name">
+                    <input type="text"  name='email'class="input" placeholder="Email">
+                </div>
+                <div class="input1">
+                    <input type="text"  name='phone'class="input" placeholder="Phone number">
+                    <input type="text" name='service'class="input" placeholder="Select Service">
+                </div>
+                
+                <textarea class="reg__textarea" type="" placeholder="Tell us about the car needing service(s)"></textarea>
+                <div class="btn">
+                    <button>Make an Appointment</button>
+                </div>
+            </form>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
